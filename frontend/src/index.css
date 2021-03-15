@@ -219,3 +219,12 @@ input {
   border: 0.1rem #c0c0c0 solid;
   border-radius: 0.5rem;
 }
+
+
+.false {
+  color:red;
+}
+
+.true {
+  color:black;
+}

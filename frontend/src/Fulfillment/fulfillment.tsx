@@ -27,16 +27,16 @@ function Fulfillment() {
                     </thead>
                     <tbody>
                         {data.orders.map(order => (<tr key = {order._id}>
-                            <td>{order._id}</td>
-                            <td>{order.createdAt}</td>
-                            <td>{order.products}</td>
-                            <td>{order.totalPrice}</td>
-                            <td>{order.user.name}</td>
-                            <td>{order.isPaid.toString()}</td>
-                            <td>{order.paidAt}</td>
-                            <td>{order.isShipped.toString()}</td>
-                            <td>{order.isDelivered.toString()}</td>
-                            <td>{order.deliveredDate}</td>
+                            <td className = {order.isShipped.toString()}>{order._id}</td>
+                            <td className = {order.isShipped.toString()}>{order.createdAt}</td>
+                            <td className = {order.isShipped.toString()}>{order.products}</td>
+                            <td className = {order.isShipped.toString()}>{order.totalPrice}</td>
+                            <td className = {order.isShipped.toString()}>{order.user.name}</td>
+                            <td className = {order.isShipped.toString()}>{order.isPaid.toString()}</td>
+                            <td className = {order.isShipped.toString()}>{order.paidAt}</td>
+                            <td className = {order.isShipped.toString()}>{order.isShipped.toString()}</td>
+                            <td className = {order.isShipped.toString()}>{order.isDelivered.toString()}</td>
+                            <td className = {order.isShipped.toString()}>{order.deliveredDate}</td>
                             <td>
                                 <Link to = {"/fulfillment/" + order._id} className = "button secondary">Details</Link>
                             </td>
